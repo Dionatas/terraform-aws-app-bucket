@@ -1,10 +1,14 @@
-variable "nome_do_sistema" {
-  description = "Nome do sistema ou modulo onde o bucket será utilizado. Vai ser usado como parte do nome do buclet."
+variable "environment" {
+  description = "Set the environment that will be used"
+  type        = string
 }
 
-variable "ambiente" {
-  description = "Ambiente onde o bucket sera utilizado <dev|hmlg|prod>. Vai ser usado como parte do nome do buclet."
+
+variable "bucket_name" {
+  description = "Set the bucket name that will be used"
+  type        = string
 }
+
 
 variable "enable_versioning" {
   description = "Define se o versionamento deve ser habilitado. Habilitado por padrão no ambiente prod"
