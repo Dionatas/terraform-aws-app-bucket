@@ -1,11 +1,11 @@
 output "bucket_name" {
   description = "Nome do bucket criado."
-  value       = aws_s3_bucket.s3_app_bucket.bucket
+  value       = aws_s3_bucket.this.bucket
 }
 
 output "endpoint" {
   description = "endpoint a ser usado como credencial de acesso ao bucket."
-  value       = aws_s3_bucket.s3_app_bucket.tags.endpoint
+  value       = aws_s3_bucket.this.tags.endpoint
 }
 
 output "id" {
